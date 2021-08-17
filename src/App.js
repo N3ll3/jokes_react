@@ -14,7 +14,7 @@ const useSemiPersistentState = (key, initialState) => {
 };
 
 const fetchJokes = async (setJokes) => {
-  await fetch(`https://v2.jokeapi.dev/joke/Any?type=single&amount=10`)
+  await fetch(`https://v2.jokeapi.dev/joke/Any?type=single&amount=5`)
     .then((response) => response.json())
     .then((data) => {
       setJokes(data.jokes);
